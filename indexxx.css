@@ -1,5 +1,15 @@
 html {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .blue-text {
+        color: rgba(58, 81, 153, 1);
+    }
 }
 
 header {
@@ -25,7 +35,7 @@ header {
     img {
         margin-right: 5svw;
     }
-    
+
     a {
         margin: 0 1svw 0 1svw;
     }
@@ -36,8 +46,9 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1svw;
+}
+.welcome{
+    h1 {
 
-    a {
-        color: rgba(58, 81, 153, 1);
     }
 }
