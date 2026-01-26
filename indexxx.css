@@ -1,4 +1,43 @@
-header{
-    display: grid;
+html {
+    font-family: "Montserrat", sans-serif;
+}
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5svw 0 5svw;
+
+    img {
+        border-radius: 100%;
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 5svw;
+    }
+    
+    a {
+        margin: 0 1svw 0 1svw;
+    }
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1svw;
+
+    a {
+        color: rgba(58, 81, 153, 1);
+    }
 }
