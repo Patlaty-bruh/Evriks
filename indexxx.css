@@ -18,8 +18,11 @@ header {
     justify-content: space-between;
     padding: 0 5svw 0 5svw;
 
-    img {
+    margin-bottom: 1svh;
+
+    .header-logo {
         border-radius: 100%;
+        height: 100px;
     }
 
     a {
@@ -31,10 +34,8 @@ header {
 .header-links {
     display: flex;
     align-items: center;
+    gap: 1svw;
 
-    img {
-        margin-right: 5svw;
-    }
 
     a {
         margin: 0 1svw 0 1svw;
@@ -47,8 +48,38 @@ header {
     justify-content: space-between;
     gap: 1svw;
 }
-.welcome{
-    h1 {
 
+.welcome {
+    background-color: rgba(233, 233, 232, 1);
+    display: flex;
+    padding: 0 5svw 0 5svw;
+    justify-content: space-between;
+
+    img {
+        height: 500px;
+    }
+}
+
+.welcome-textblock {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.welcome-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 5svw;
+    
+}
+.welcome-text{
+    width: 900px;
+    h1 {
+        font-size: 64px;
+        margin-bottom: 2px;
+    }
+    h2{
+       font-size: 28px; 
+       margin-top: 10px;
     }
 }
