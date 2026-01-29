@@ -70,16 +70,52 @@ header {
     display: flex;
     justify-content: left;
     gap: 5svw;
-    
+    height: ;
+    : 70px;
+
 }
-.welcome-text{
+
+.welcome-text {
     width: 900px;
+
     h1 {
         font-size: 64px;
         margin-bottom: 2px;
     }
-    h2{
-       font-size: 28px; 
-       margin-top: 10px;
+
+    h2 {
+        font-size: 28px;
+        margin-top: 10px;
     }
+}
+
+.welcome-join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 45px 25px 45px;
+    background-color: rgba(58, 81, 153, 1);
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px);
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.295));
+    }
+}
+
+.welcome-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 45px 25px 45px;
+
+    background-color: rgba(233, 233, 232, 1);
+    border-radius: 30px;
+    font-weight: bold;
+    border: 4px solid black;
 }
