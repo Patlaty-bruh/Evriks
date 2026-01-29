@@ -1,6 +1,7 @@
 html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+    padding: 0 1svw 0 1svw;
 
     a {
         text-decoration: none;
@@ -16,9 +17,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5svw 0 5svw;
 
-    margin-bottom: 1svh;
+    margin-bottom: 2svh;
 
     .header-logo {
         border-radius: 100%;
@@ -28,6 +28,13 @@ header {
     a {
         font-weight: bold;
         font-size: 20px;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    a:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(58, 82, 153, 0.342);
     }
 }
 
@@ -118,4 +125,19 @@ header {
     border-radius: 25px;
     font-weight: bold;
     border: 4px solid black;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 64px;
+        margin: 20px 0 60px 0;
+    }
+}
+
+.news-blocks {
+    display: flex;
 }
