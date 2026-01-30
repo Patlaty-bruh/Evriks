@@ -3,10 +3,6 @@ html {
     scroll-behavior: smooth;
     padding: 0 1svw 0 1svw;
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
 
     .blue-text {
         color: rgba(58, 81, 153, 1);
@@ -30,6 +26,8 @@ header {
         font-size: 20px;
         border-radius: 10px;
         padding: 4px;
+        text-decoration: none;
+        color: inherit;
     }
 
     a:hover {
@@ -140,4 +138,36 @@ header {
 
 .news-blocks {
     display: flex;
+    gap: 5%;
+    
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    @media(max-width: 702px) {
+        img {
+            display: none;
+        }
+    }
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgba(233, 233, 232, 1);
+        text-align: center;
+    }
+
+    h4, p {
+        margin: 5%;
+    }
+
+    a {
+        text-decoration: underline;
+        font-weight: bold;
+    }
 }
