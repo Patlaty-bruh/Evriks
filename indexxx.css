@@ -1,12 +1,20 @@
 html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
-    padding: 0 1svw 0 1svw;
+    padding: 1svh 1svw 0 1svw;
+
 
 
     .blue-text {
         color: rgba(58, 81, 153, 1);
     }
+}
+
+
+
+
+body {
+    margin: 0;
 }
 
 header {
@@ -42,8 +50,16 @@ header {
     gap: 1svw;
 
 
+
+
     a {
         margin: 0 1svw 0 1svw;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-3px);
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.295));
+        }
     }
 }
 
@@ -52,6 +68,17 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1svw;
+
+
+    a {
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-3px);
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.295));
+        }
+
+    }
 }
 
 .welcome {
@@ -139,20 +166,22 @@ header {
 .news-blocks {
     display: flex;
     gap: 5%;
-    
-    
+
+
+
+
     img {
         max-width: 100%;
         height: auto;
         border-radius: 20px 20px 0px 0px;
     }
-    
+
     @media(max-width: 702px) {
         img {
             display: none;
         }
     }
-    
+
     div {
         display: flex;
         flex-direction: column;
@@ -160,9 +189,16 @@ header {
         border-radius: 20px;
         background-color: rgba(233, 233, 232, 1);
         text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-3px);
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.295));
+        }
     }
 
-    h4, p {
+    h4,
+    p {
         margin: 5%;
     }
 
@@ -170,4 +206,62 @@ header {
         text-decoration: underline;
         font-weight: bold;
     }
+
+    h4 {
+        font-size: 1.5svw;
+        margin-bottom: 0.5%;
+    }
+
+    p {
+        font-size: 1.2svw
+    }
+}
+
+.links-block {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(232, 233, 232, 1);
+    margin-top: 7svh;
+
+    div {
+        padding: 4svh 7svw 4svh 7svw;
+        background-color: rgba(58, 81, 153, 1);
+        font-weight: bold;
+        border-radius: 30px;
+        font-size: 1.5svw;
+        margin: 30px;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-3px);
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.295));
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+footer {
+    background-color: rgba(58, 81, 153, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 5svh;
+    margin-top: 7svh;
+
+    p {
+        width: 28svw;
+        font-size: 23px;
+        margin: 1px;
+        font-weight: bold;
+    }
+
 }
